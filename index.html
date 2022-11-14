@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/b11c054fcf.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Homework</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <header class="fondo">
+                    <form id="form-city">
+                        <input type="text" placeholder="Enter city" autofocus="on" class="input" id="enter-city">
+                        <input type="submit" value="Search" class="button">
+                        <input type="submit" value="Current" class="button_currentCity" id="currentCity">
+                    </form>
+                    <div class="date" id="day-hours">Tuesday, October 15th
+                    </div>
+                    <div class="conditions" id="weather-conditions">Sunny</div>
+                    <div class="city" id="city-change">Artigas</div>
+                    <div class="temp-display" id="showTemp"><i class="fa-solid fa-sun fa-spin today-sun"
+                            style="--fa-animation-duration: 15s"></i> 25 ºC </div>
+                </header>
+                <div class="row">
+                    <div class="col" id="wind-condition">Wind <br> <i class="fa-solid fa-wind wind-icon"></i></br>25kmh
+                    </div>
+                    <div class="col" id="hum-condition"> Humidity <br><i class="fa-solid fa-smog hum-icon"></i></br>5%
+                    </div>
+                    <div class="col" id="low-tempConditioin"> Low <br><i
+                            class="fa-solid fa-temperature-low temp-icon"></i> </br>
+                        10ºC</div>
+                    <div class="col" id="high-tempCondition">High <br><i
+                            class="fa-solid fa-temperature-high temphigh-icon"></i> </br>26ºC
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body1">
+
+                        <div class="days">Wednesday <div class="temperature"><i
+                                    class="fa-solid fa-cloud-sun nube-icon"></i>
+                                22ºC /
+                                15ºC
+                            </div>
+                        </div>
+                        <div class="days">Thursday <div class="temperature"><i
+                                    class="fa-solid fa-cloud-sun-rain sunrain-icon"></i> 22ºC / 13ºC</div>
+                        </div>
+                        <div class="days">Friday <div class="temperature"><i
+                                    class="fa-solid fa-cloud-showers-heavy"></i>
+                                21ºC / 15ºC</div>
+                        </div>
+                        <div class="days">Saturday <div class="temperature"><i
+                                    class="fa-solid fa-cloud-sun-rain sunrain-icon"></i> 24ºC /
+                                16ºC</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>Coded by Yesica Vázquez</footer>
+    <script src="src/script.js"> </script>
+</body>
+
+</html>

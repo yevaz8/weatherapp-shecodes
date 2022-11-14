@@ -1,0 +1,101 @@
+.date,
+.conditions {
+  font-size: 20px;
+  margin: 10px;
+  font-family: "Nunito", sans-serif;
+  color: #3b7477;
+}
+.temp-display,
+.city {
+  font-family: "Nunito", sans-serif;
+  text-align: right;
+  font-size: 30px;
+  color: #305b5e;
+  padding: 0 auto;
+  margin: 10px 30px;
+  position: relative;
+  top: -1em;
+}
+.temperature {
+  margin: 0 auto;
+  text-align: right;
+  font-style: oblique;
+  padding-right: 10px;
+  font-family: "Nunito", sans-serif;
+}
+.card-body {
+  background: #ece9e9;
+  border-radius: 5px;
+}
+.fondo {
+  border-radius: 15px;
+  box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.5),
+    5px 5px 9px rgba(94, 104, 121, 0.3);
+  background: #add2c9;
+}
+
+.card {
+  border-radius: 15px;
+  box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.5),
+    5px 5px 9px rgba(94, 104, 121, 0.3);
+  display: block;
+  max-width: 700px;
+  margin: 30px auto;
+}
+.card-body1 {
+  background: #add2c9;
+  border-radius: 5px;
+  box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.5),
+    5px 5px 9px rgba(94, 104, 121, 0.3);
+  opacity: 0.8;
+}
+.input {
+  margin: 8px;
+  border: solid rgba(255, 255, 255, 0.5);
+}
+.button {
+  margin: -9px;
+  background-color: #488b8f;
+  border: 1px solid;
+  color: #f7f6e7;
+  border-radius: 5px;
+}
+.button_currentCity {
+  margin: 9px;
+  background-color: #488b8f;
+  border: 1px solid;
+  color: #f7f6e7;
+  border-radius: 5px;
+}
+
+.row {
+  font-family: "Nunito", sans-serif;
+  margin: 20px;
+  text-align: center;
+  padding: 30px 15px;
+  border-radius: 5px;
+  margin-left: 5px;
+  font-size: 18px;
+  color: #488b8f;
+}
+
+.temphigh-icon,
+.hum-icon,
+.wind-icon,
+.temp-icon {
+  font-size: 35px;
+}
+
+.days {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #305b5e;
+  margin: 5px 5px;
+  text-align: left;
+}
+footer {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 12px;
+}
