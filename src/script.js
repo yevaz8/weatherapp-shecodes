@@ -27,23 +27,22 @@ currentDate();
 //wheather
 function displayWeather(response) {
   console.log(response.data);
-  document.querySelector(`#showTemp`).innerHTML = Math.round(
-    response.data.main.temp
-  );
-  document.querySelector(`#city-change`).innerHTML = response.data.name;
-  document.querySelector(`#weather-conditions`).innerHTML =
-    response.data.weather[0].description;
-  document.querySelector(`#wind-condition`).innerHTML = Math.round(
-    response.data.wind.speed
-  );
-  document.querySelector(`#hum-condition`).innerHTML =
-    response.data.main.humidity;
-  document.querySelector(`#low-tempConditioin`).innerHTML = Math.round(
-    response.data.main.temp_min
-  );
-  document.querySelector(`#high-tempCondition`).innerHTML = Math.round(
-    response.data.main.temp_max
-  );
+  let tempShow = document.querySelector(`#showTemp`);
+  tempShow.innerHTML = Math.round(response.data.main.temp);
+  let searchCity = document.querySelector(`#city-change`);
+  searchCity.innerHTML = response.data.name;
+  let weatherConditions = document.querySelector(`#weather-conditions`);
+  weatherConditions.innerHTML = response.data.weather[0].description;
+  let windCondition = document.querySelector(`#wind-condition`);
+  windCondition.innerHTML = Math.round(response.data.wind.speed);
+  let humCondition = document.querySelector(`#hum-condition`);
+  humCondition.innerHTML = response.data.main.humidity;
+  let lowTempCondition = document.querySelector(`#low-tempConditioin`);
+  lowTempCondition.innerHTML = Math.round(response.data.main.temp_min);
+  let highTempCondition = document.querySelector(`#high-tempCondition`);
+  highTempCondition.innerHTML = Math.round(response.data.main.temp_max);
+  let iconWeather = document.querySelector(`#icon`);
+  iconWeather.innerHTML = `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`;
 }
 
 //location
