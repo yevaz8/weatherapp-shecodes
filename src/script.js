@@ -42,7 +42,7 @@ function displayWeather(response) {
   let highTempCondition = document.querySelector(`#high-tempCondition`);
   highTempCondition.innerHTML = Math.round(response.data.main.temp_max);
   let iconWeather = document.querySelector(`#icon`);
-  iconWeather.innerHTML = `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`;
+  iconWeather.setAttribute = `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`;
 }
 
 //location
