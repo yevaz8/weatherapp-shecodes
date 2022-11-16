@@ -25,32 +25,33 @@
             <div class="card-body">
                 <header class="fondo">
                     <form id="form-city">
-                        <input type="text" placeholder="Enter city" autofocus="on" class="input" id="enter-city">
+                        <input type="text" placeholder="Enter city" autofocus="on" class="input" id="enter-city"
+                            autocomplete="off">
                         <input type="submit" value="Search" class="button">
                         <input type="submit" value="Current" class="button_currentCity" id="currentCity">
                     </form>
-                    <div class="date" id="day-hours">Tuesday, October 15th
+                    <div class="date" id="day-hours">
                     </div>
-                    <div class="conditions" id="weather-conditions">Sunny</div>
-                    <div class="city" id="city-change">Artigas</div>
+                    <div class="conditions" id="weather-conditions"></div>
+                    <div class="city" id="city-change"></div>
                     <div class="temp-display">
                         <img id="icon" />
-                        <div id="showTemp"></i>
-                            25 ºC |<a href="#">ºF</a></div>
+                        <div id="showTemp"></div><span class="units"> <a href="#" id="celsiusLink">ºC</a>
+                            | <a href="#" id="fahrenLink">ºF</a></span>
                     </div>
                 </header>
                 <div class="row">
                     <span class="col">Wind <br> <i class="fa-solid fa-wind wind-icon"></i></br>
-                        <p id="wind-condition">25</p>kmh
+                        <span id="wind-condition"></span><span>Kmh</span>
                     </span>
                     <span class="col"> Humidity <br> <i class="fa-solid fa-smog hum-icon"></i></br>
-                        <p id="hum-condition">5</p>%
+                        <span id="hum-condition"></span><span>%</span>
                     </span>
                     <span class="col">Low<br><i class="fa-solid fa-temperature-low temp-icon"></i> </br>
-                        <p id="low-tempConditioin">10º</p>ºC
+                        <span id="low-tempConditioin"></span><span>ºC</span>
                     </span>
                     <span class="col">High<br><i class="fa-solid fa-temperature-high temphigh-icon"></i> </br>
-                        <p id="high-tempCondition">22</p>ºC
+                        <span id="high-tempCondition"></span><span>ºC</span>
                     </span>
                 </div>
 

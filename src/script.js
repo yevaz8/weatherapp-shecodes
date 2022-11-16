@@ -46,6 +46,7 @@ function displayWeather(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  celsiusTemp = response.data.main.temp;
 }
 
 //location
@@ -60,6 +61,7 @@ function formSubmit(event) {
   let city = document.querySelector(`#enter-city`).value;
   searchCity(city);
 }
+
 let searchForm = document.querySelector("#form-city");
 searchForm.addEventListener(`submit`, formSubmit);
 
@@ -79,3 +81,25 @@ function getCurrentPosition(event) {
 
 let currentButton = document.querySelector(`#currentCity`);
 currentButton.addEventListener("click", getCurrentPosition);
+
+function displayFahrentTemp(event) {
+  event.preventDefault();
+  let tempShow = document.querySelector(`#showTemp`);
+  let fahrentTemp = (celsiusTemp * 9) / 5 + 32;
+  tempShow.innerHTML = Math.round(fahrentTemp);
+}
+let celsiusTemp = null;
+
+let fahrenLink = document.querySelector(`#fahrenLink`);
+fahrenLink.addEventListener("click", displayFahrentTemp);
+
+function displayCelsiustTemp(event) {
+  event.preventDefault();
+  let tempShow = document.querySelector(`#showTemp`);
+  tempShow.innerHTML = Math.round(celsiusTemp);
+}
+
+let celsiusLink = document.querySelector(`#celsiusLink`);
+celsiusLink.addEventListener("click", displayCelsiustTemp);
+
+searchCity("Artigas");
