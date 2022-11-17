@@ -3,11 +3,20 @@ body {
 }
 
 .date,
-.conditions {
+.conditions,
+.feels-like {
   font-size: 20px;
   margin: 10px;
   color: #3b7477;
+
 }
+
+.degrees {
+  color: #3b7477;
+  font-size: 20px;
+  margin: -6px;
+}
+
 
 .temp-display,
 .city {
@@ -15,7 +24,7 @@ body {
   font-size: 30px;
   color: #305b5e;
   padding: 0 auto;
-  margin: 10px 30px;
+  margin: -3px 55px;
   position: relative;
   top: -2em;
 }
@@ -77,6 +86,8 @@ body {
     5px 5px 9px rgba(94, 104, 121, 0.3);
   opacity: 0.8;
   font-family: "Nunito", sans-serif;
+  max-width: 700px;
+  max-height: 350px;
 
 }
 
@@ -102,7 +113,7 @@ body {
 }
 
 .row {
-  margin: 20px;
+  margin: -2em;
   text-align: center;
   padding: 30px 15px;
   border-radius: 5px;
@@ -124,7 +135,8 @@ body {
   font-weight: bolder;
   color: #305b5e;
   margin: 5px 5px;
-  text-align: left;
+
+
 }
 
 footer {

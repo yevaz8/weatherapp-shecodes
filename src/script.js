@@ -24,6 +24,27 @@ function currentDate() {
 }
 currentDate();
 
+//forecast
+function forecastDisplay(response) {
+  console.log(response.data.daily);
+  let forecastElement = document.querySelector(`#weather-forecast`);
+  let forecastHTML = "";
+  let day = ["Thu", "Fri", "Sat", "Sun"];
+  day.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      ` <div class="days">${day}
+                            <div class="temperature">
+                                <img id="icon-forecast" />
+                                <span class="forecast-max-temp">22ºC</span>
+                                <span class="forecast-min-temp">15ºC</span>
+                          
+                        </div>`;
+  });
+
+  forecastElement.innerHTML = forecastHTML;
+}
+
 //wheather
 function displayWeather(response) {
   console.log(response.data);
@@ -31,6 +52,8 @@ function displayWeather(response) {
   tempShow.innerHTML = Math.round(response.data.main.temp);
   let searchCity = document.querySelector(`#city-change`);
   searchCity.innerHTML = response.data.name;
+  let feelsLike = document.querySelector(`#feelsLike`);
+  feelsLike.innerHTML = Math.round(response.data.main.feels_like);
   let weatherConditions = document.querySelector(`#weather-conditions`);
   weatherConditions.innerHTML = response.data.weather[0].description;
   let windCondition = document.querySelector(`#wind-condition`);
@@ -47,8 +70,17 @@ function displayWeather(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   celsiusTemp = response.data.main.temp;
+  getForecast(response.data.coord);
 }
+//forecastData
 
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let api = "fda3688b1db05987dd5d07c237aecfba";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${api}`;
+  console.log(apiUrl);
+  axios.get(apiUrl).then(forecastDisplay);
+}
 //location
 function searchCity(city) {
   let api = "eaf223fbefa74d0f073135b8f2023cf9";
