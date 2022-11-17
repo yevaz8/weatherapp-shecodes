@@ -46,6 +46,7 @@ body {
 
 .temperature {
   margin: 0 auto;
+  font-size: 18px;
   text-align: right;
   font-style: oblique;
   padding-right: 10px;
@@ -135,8 +136,16 @@ body {
   font-weight: bolder;
   color: #305b5e;
   margin: 5px 5px;
+}
 
+#icon-forecast {
 
+  width: 50px;
+}
+
+#forecast-max-temp,
+#forecast-min-temp {
+  font-size: 20px;
 }
 
 footer {
