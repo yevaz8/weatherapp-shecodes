@@ -5,7 +5,7 @@ function currentDate() {
     "Monday",
     "Tuesday",
     "Wednesday",
-    "Thuerday",
+    "Thursday",
     "Friday",
     "Saturday",
   ];
