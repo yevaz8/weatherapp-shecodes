@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="src/style.css" rel="stylesheet" type="text/css" />
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="src/style.css" rel="stylesheet" type="text/css" />
     <title>Awesome weather app</title>
 </head>
 
@@ -33,7 +34,7 @@
                     <div class="date" id="day-hours">
                     </div>
                     <div class="conditions" id="weather-conditions"></div>
-                    <span class="feels-like">Feels like:</span>
+                    <span class="feellike">Feels like:</span>
                     <span class="feels-like" id="feelsLike"></span><span class="degrees">ºC</span>
 
                     <div class="city" id="city-change"></div>
@@ -46,16 +47,17 @@
                 </header>
                 <div class="row">
                     <span class="col">Wind <br> <i class="fa-solid fa-wind wind-icon fa-beat"></i></br>
-                        <span id="wind-condition"></span><span>m/h</span>
+                        <span id="wind-condition"></span><span> m/h</span>
                     </span>
                     <span class="col"> Humidity <br> <i class="fa-solid fa-smog hum-icon fa-beat"></i></br>
-                        <span id="hum-condition"></span><span>%</span>
+                        <span id="hum-condition"></span><span> %</span>
                     </span>
-                    <span class="col">Low<br><i class="fa-solid fa-temperature-low temp-icon fa-beat"></i> </br>
-                        <span id="low-tempConditioin"></span><span>ºC</span>
+                    <span class="col">Low<br><i class="fa-solid fa-temperature-low temp-icon fa-beat"></i>
+                        </br>
+                        <span id="low-tempCondition"></span><span> ºC</span>
                     </span>
                     <span class="col">High<br><i class="fa-solid fa-temperature-high temphigh-icon fa-beat"></i> </br>
-                        <span id="high-tempCondition"></span><span>ºC</span>
+                        <span id="high-tempCondition"></span><span> ºC</span>
                     </span>
                 </div>
 

@@ -83,7 +83,7 @@ function displayWeather(response) {
   windCondition.innerHTML = Math.round(response.data.wind.speed);
   let humCondition = document.querySelector(`#hum-condition`);
   humCondition.innerHTML = response.data.main.humidity;
-  let lowTempCondition = document.querySelector(`#low-tempConditioin`);
+  let lowTempCondition = document.querySelector(`#low-tempCondition`);
   lowTempCondition.innerHTML = Math.round(response.data.main.temp_min);
   let highTempCondition = document.querySelector(`#high-tempCondition`);
   highTempCondition.innerHTML = Math.round(response.data.main.temp_max);
